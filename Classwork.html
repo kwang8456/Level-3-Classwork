@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Level 3 Classwork </title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body onload = "initialize ();">
+
+<!-- 1 -->
+    <h1> Function </h1>
+<hr/>
+    <div id = "numOutPut"> 0 </div>
+<hr/>
+
+    <button onclick = "modifyNumber (1);"> Add 1 </button>
+    <button onclick = "modifyNumber (-1);"> Subtract 1 </button>
+    <button onclick = "modifyNumber (5);"> Add 5 </button>
+    <button onclick = "modifyNumber (-5);"> Subtract 5 </button>
+    <button onclick = "modifyNumber (10);"> Add 10 </button>
+    <button onclick = "modifyNumber (-10);"> Subtract 10 </button>
+
+    <br/> <br/>
+
+    <button onclick = "modifyNumber (getRandomInteger (-10, 10));"> Modify The Number Randomly </button>
+
+<!-- 2 -->
+<hr/>
+    <h1> While Loops </h1>
+<hr/>
+    Twix: <span id = "Twix"> </span> <br/>
+    Scream Eggs: <span id = "Eggs"> </span> <br/>
+    Twizzlers: <span id = "Twizzlers"> </span> <br/>
+    Airheads: <span id = "Airheads"> </span> <br/>
+    Ring Pops: <span id = "RingPops"> </span> <br/>
+    
+    <button onclick = "giveCandy ();"> Give Out Candy </button>
+<hr/>
+    <div id = "CandyLog"></div>
+
+<!-- 3 -->
+<hr/>
+    <h1> Form Control </h1>
+<hr/>
+
+    <h2 id = "greeting"> </h2>
+    <form id = "inputform"> 
+        First Name: <input name = "fname" type = "text"/>
+        Last Name: <input name = "lname" type = "text"/>
+        <label>
+            <input name = "pizza" type = "checkbox" /> Check here if you like to eat pizza. 
+        </label>
+
+        <br/> <br/>
+
+        Where are you from?
+        <label> 
+            <input type = "radio" name = "origin" value = "Earth" /> Earth
+        </label>
+        <label> 
+            <input type = "radio" name = "origin" value = "The Moon" /> The Moon
+        </label>
+        <label> 
+            <input type = "radio" name = "origin" value = "Mars" /> Mars
+        </label>
+    </form>
+
+<hr/>
+    <button onclick = "recordData ();"> Click Here When Done </button>
+
+<!-- 4 -->
+<hr/>
+    <h1> Film Lists </h1>
+<hr/>
+
+    <ul>
+        <h3> Genres </h3>
+        <li> 
+            <h4> Comedy </h4>
+            <ol>
+                <li> Dodgeball: A True Underdog Story </li>
+                <li> Wedding Crashers </li>
+                <li> Airplane </li>
+            </ol>
+        </li>
+        <li>
+            <h4> Drama </h4>
+            <ol> 
+                <li> On Golden Pond </li>
+                <li> Punch Drunk Love </li>
+                <li> Eternal SunShine of the Spotless Mind </li>
+            </ol>
+        </li>
+        <li>  
+            <h4> Science Fiction </h4>
+            <ol> 
+                <li> Aliens </li>
+                <li> The Thing </li>
+                <li> Star Trek </li>
+            </ol>
+        </li>
+        <li>  
+            <h4> Super-Hero </h4>
+            <ol> 
+                <li> Spider-Man </li>
+                <li> X-Men </li>
+                <li> Avengers </li>
+            </ol>
+        </li>
+    </ul>
+
+<!-- 5 -->
+<hr/>
+    <h1> Tables </h1>
+<hr/>
+
+<!--
+    <table>
+      <tr>
+        <td> row 1, col 1 </td>
+        <td> row 1, col 2 </td>
+      </tr>
+      <tr>
+        <td> row 2, col 1 </td>
+        <td> row 2, col 2 </td>
+        <td> row 2, col 3 </td>
+      </tr>
+    </table>
+-->
+
+    <table>
+        <tr>
+            <th rowspan = "8" > <div> MLB </div> </th>
+        </tr>
+        <tr>
+            <th colspan = "3" > American League </th>
+            <th colspan = "3" > National League </th>
+        </tr>
+        <tr>
+            <th> West </th>
+            <th> Central </th>
+            <th> East </th>
+            <th> West </th>
+            <th> Central </th>
+            <th> East </th>
+        </tr>
+        <tr>
+            <th> Astros </th>
+            <th> Indians </th>
+            <th> Yankees </th>
+            <th> Dodgers </th>
+            <th> Cubs </th>
+            <th> Mets </th>
+        </tr>
+        <tr>
+            <th> Athletics </th>
+            <th> Twins </th>
+            <th> Blue Jays </th>
+            <th> Rockies </th>
+            <th> Brewers </th>
+            <th> Braves </th>
+        </tr>
+        <tr>
+            <th> Mariners </th>
+            <th> Tigers </th>
+            <th> Red Sox </th>
+            <th> Diamondbacks </th>
+            <th> Cardinals </th>
+            <th> Phillies </th>
+        </tr>
+        <tr>
+            <th> Angels </th>
+            <th> White Sox </th>
+            <th> Rays </th>
+            <th> Giants </th>
+            <th> Pirates </th>
+            <th> Nationals </th>
+        </tr>
+        <tr>
+            <th> Rangers </th>
+            <th> Royal </th>
+            <th> Orioles </th>
+            <th> Padres </th>
+            <th> Reds </th>
+            <th> Marlins </th>
+        </tr>
+    </table>
+
+<!-- 6 -->
+<hr/>
+    <h1> Dice Table </h1>
+<hr/>
+
+    <table id = "dicetable">
+        <tr>
+            <th> Roll </th>
+            <th> Result </th>
+        </tr>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: cornflowerblue;
+}
+
+h1 {
+    text-align: center;
+    background-color: aqua;
+}
+
+h3 {
+    font-size: 24pt;
+    color: #cc0000;
+}
+
+h4 {
+    text-decoration: underline;
+    font-size: 18pt;
+    color: #734d26; 
+}
+
+ul {
+    list-style-type: none ;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+table {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+
+td {
+    border: thin solid black;
+    padding: 3px;
+    width: 15%;
+}
+
+th {
+    border: medium solid black;
+    padding: 5px;
+}
+
+div {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 24pt;
+}
